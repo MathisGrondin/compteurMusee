@@ -1,5 +1,0 @@
-Projet pour faire un compteur web pour le musée
-Non, ce n'est pas fini, il en manque énormément ! 
-
-
-- Mathis Grondin
