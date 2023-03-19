@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Compteur</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12 text-center">
+                <h2>Sexe</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="btn-group col-xl-12 col-12" role="group">
+                <input type="radio" class="btn-check bouton" name="btn-radio2" id="btn-radioF" autocomplete="off" value="femme">
+                <label class="btn btn-outline-primary" for="btn-radioF">Femme</label>
+                <input type="radio" class="btn-check bouton" name="btn-radio2" id="btn-radioH" autocomplete="off" value="homme">
+                <label class="btn btn-outline-primary" for="btn-radioH">Homme</label>
+            </div>
+        </div>
+        <div class="row" id="age">
+            <div class="col-xl-12 text-center">
+                <h2>Âge</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="btn-group col-xl-12 col-12" role="group" id="bouton" aria-label="radio toggle button group">
+                <input type="radio" class="btn-check bouton" name="btn-radio" id="btn-radio1" autocomplete="off">
+                <label class="btn btn-outline-danger" for="btn-radio1" value="15">15-</label>
+                <input type="radio" class="btn-check bouton" name="btn-radio" id="btn-radio2" autocomplete="off">
+                <label class="btn btn-outline-danger" for="btn-radio2" value="16">16-30</label>
+                <input type="radio" class="btn-check bouton" name="btn-radio" id="btn-radio3" autocomplete="off">
+                <label class="btn btn-outline-danger" for="btn-radio3" value="31">31-45</label>
+                <input type="radio" class="btn-check bouton" name="btn-radio" id="btn-radio4" autocomplete="off">
+                <label class="btn btn-outline-danger" for="btn-radio4" value="46">46-60</label>
+                <input type="radio" class="btn-check bouton" name="btn-radio" id="btn-radio5" autocomplete="off">
+                <label class="btn btn-outline-danger" for="btn-radio5" value="61">61+</label>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="offset col-xl-2 col-2"></div>
+            <div class="btn-group col-xl-8 col-8">
+                <button class="btn btn-success" id="Valider">Valider</button>
+                <button class="btn btn-danger" id="Effacer">Effacer sélections</button>
+                <button class="btn btn-warning" id="Reinit">Réinitialiser tout</button>
+            </div>
+            <div class="offset col-xl-2 col-2"></div>
+        </div>
+    </di>
+    <div class="container-fluid" id="resultats">
+        <div class="row">
+            <div class="col-xl-12 col-12">
+                <table>
+                    <tr>
+                        <th>Nombre de femmes &emsp; -> </th>
+                        <td class="text-center"><span id="nbFemmes"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Nombre d'hommes &emsp; -> </th>
+                        <td class="text-center"><span class="text-center" id="nbHommes"></span></td>
+                    </tr>
+                    <tr>
+                        <th>15- ans &emsp; -> </th>
+                        <td class="text-center"><span id="age1"></span></td>
+                    </tr>
+                    <tr>
+                        <th>16-30 ans &emsp; -> </th>
+                        <td class="text-center"><span class="text-center" id="age2"></span></td>
+                    </tr>
+                    <tr>
+                        <th>31-45 ans &emsp; -> </th>
+                        <td class="text-center"><span id="age3"></span></td>
+                    </tr>
+                    <tr>
+                        <th>46-60 ans &emsp; -> </th>
+                        <td class="text-center"><span class="text-center" id="age4"></span></td>
+                    </tr>
+                    <tr>
+                        <th>61+ ans &emsp; -> </th>
+                        <td class="text-center"><span id="age5"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
